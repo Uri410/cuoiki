@@ -36,10 +36,10 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload specific files: index1.html and index2.html
+          # Upload specific files: index.html and index1.html
           path: |
-            ./index1.html
-            ./index2.html
+            ./main/index.html
+            ./1/index1.html
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
